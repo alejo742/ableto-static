@@ -1,0 +1,31 @@
+:root {
+    colorPrimary: #fff;
+    colorPrimaryDark: #000;
+    colorSecondaryBlue: #0401FF;
+    colorSecondarySkyblue: #61D8DE;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes bounce {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+body img {
+    width: min(80vw, 60rem);
+    height: auto;
+    animation: bounce 1s infinite;
+}
