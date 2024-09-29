@@ -43,12 +43,14 @@
 /*header and hero section*/
 header {
     position: relative;
+    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 .header-background {
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: -3rem;
     transform: translateY(-50%);
@@ -303,12 +305,10 @@ header {
         font-size: 8rem;
     }
 }
-@media only screen and (max-width: 600px) {
-    .header-background {
-        width: 120vw;
-    }
-}
 @media only screen and (max-width: 450px) {
+    .header-background {
+        width: calc(100vw + 2rem);
+    }
     .hero-content-text h1 {
         font-size: 8vw;
     }
